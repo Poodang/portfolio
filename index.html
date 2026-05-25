@@ -180,6 +180,25 @@
       color: #6b7280;
     }
 
+    .hero-bg::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+
+  background: url("C:\Users\HP\Downloads\Marketing analytics.gif");
+  background-size: cover;
+  background-position: center;
+
+  opacity: 0.15;
+
+  z-index: 0;
+}
+
+.hero-bg .container {
+  position: relative;
+  z-index: 2;
+}
+
     @media (max-width: 768px) {
       .hero h1 {
         font-size: 32px;
@@ -197,7 +216,7 @@
     <div class="container hero">
       <h1>Hi, I'm Supattra Jairew</h1>
       <p>
-        I enjoy the challenge and pressure that come with data analytics work..
+        I enjoy the challenge and pressure that come with data analytics work.
       </p>
 
       <div class="btn-group">
