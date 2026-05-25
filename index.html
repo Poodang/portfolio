@@ -38,25 +38,17 @@
 
     /* GIF Background */
 
-    .hero-bg::before{
-      content:"";
-      position:absolute;
-      inset:0;
+    .hero-title{
+    display:flex;
+    align-items:center;
+    gap:20px;
+    flex-wrap:wrap;
+  }
 
-      background:url("marketing-analytics.gif");
-      background-size:cover;
-      background-position:center;
-
-      opacity:0.15;
-
-      z-index:0;
-    }
-
-    .hero-bg .container{
-      position:relative;
-      z-index:2;
-    }
-
+.title-gif{
+  width:120px;
+  border-radius:12px;
+}
     .hero{
       display:flex;
       flex-direction:column;
@@ -258,11 +250,17 @@
 
   <!-- HERO -->
 
-  <header class="hero-bg">
+  <header>
 
     <div class="container hero">
 
-      <h1>Hi, I'm Supattra Jairew</h1>
+      <h1 class="hero-title">
+        Hi, I'm Supattra Jairew
+      
+        <img src="marketing-analytics.gif"
+             class="title-gif"
+             alt="analytics gif">
+      </h1>
 
       <p>
         Investment Specialist focused on Investment Research,
